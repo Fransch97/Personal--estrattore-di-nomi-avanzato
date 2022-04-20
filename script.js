@@ -5,7 +5,6 @@ const h1 = document.querySelector('h1');
 console.log(h1);
 const btn = document.querySelector('button');
 console.log(btn);
-let estratto = false;
 
 const nomiEstratti = [];
 
@@ -31,8 +30,5 @@ btn.addEventListener('click', ()=>{
             nomiEstratti.length = 0;
             console.log(nomiEstratti, "adesso");
         }
-        estratto = true;
-
-    estratto = false;
     console.log(nomiEstratti);
 })
