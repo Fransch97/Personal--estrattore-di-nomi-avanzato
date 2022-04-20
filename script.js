@@ -12,12 +12,10 @@ const nomiEstratti = [];
 
 btn.addEventListener('click', ()=>{
     btn.innerHTML = "Estrai"
-    while(!estratto){
         i = parseInt(Math.random()*listaNomi.length);
         console.log(i);
         let nomeEstratto = listaNomi[i];
         console.log(nomeEstratto);
-        
         if(!(nomiEstratti.length === listaNomi.length)){
             while(nomiEstratti.includes(nomeEstratto)){
                 i = parseInt(Math.random()*listaNomi.length);
@@ -33,10 +31,7 @@ btn.addEventListener('click', ()=>{
             nomiEstratti.length = 0;
             console.log(nomiEstratti, "adesso");
         }
-        
         estratto = true;
-        
-    }
 
     estratto = false;
     console.log(nomiEstratti);
